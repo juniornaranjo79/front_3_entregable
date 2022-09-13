@@ -18,6 +18,7 @@ export default function Item( {total, comprar, nombre, descripcion, stock} ) {
         En stock: {cantidad > 0 ? cantidad : <span> Agotado </span> } 
       </h5>
       <button disabled={!cantidad} onClick={manejoStock}>{cantidad ? 'COMPRAR' : 'SIN STOCK'}</button>
+      {/*cantidad > 0 ? <button onClick = {manejoStock}> COMPRAR </button> : <button disabled> SIN STOCK </button>*/}
     </div>
   )
 }
